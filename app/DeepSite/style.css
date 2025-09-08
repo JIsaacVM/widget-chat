@@ -1,0 +1,32 @@
+:root {
+    --color-primary: #3b82f6;
+    /* Azul primario */
+    --color-primary-dark: #1e40af;
+    /* Azul oscuro */
+    --color-secondary: #2563eb;
+    /* Azul secundario */
+    --color-text-dark: #171717;
+    /* Gris oscuro para texto */
+    --color-text-light: #525252;
+    /* Gris claro para texto */
+
+
+    --bg-cards: #f3f4f6;
+
+    --bg-cirlce: #a6c3f1;
+    --bg-light: #bfcefe;
+    --btn-hover: #0b67fb;
+
+
+    --white: #ffffff;
+    --black: #000000;
+
+    --boder: #d1d5db;
+}
+
+/* Estilos de cuerpo para utilizar las variables */
+body {
+    background: var(--white);
+    color: var(--color-text-dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
