@@ -20,7 +20,7 @@ export default function ChatWidget(): JSX.Element {
         className="bg-[var(--color-primary)] text-[var(--white)] rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-[var(--color-primary-dark)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 transition-transform duration-300"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-      > 
+      >
         <AnimatePresence mode="wait" initial={false}>
           {isOpen ? (
             <motion.div
@@ -78,7 +78,7 @@ export default function ChatWidget(): JSX.Element {
               </div>
               {/* Mensaje del usuario */}
               <div className="flex justify-end">
-                <div className="text-[var(--bg-circle)] text-[var(--color-primary-dark)] p-3 rounded-xl rounded-br-none max-w-[85%]">
+                <div className="text-[var(--bg-circle)] bg-[var(--color-primary-dark)] p-3 rounded-xl rounded-br-none max-w-[85%]">
                   <p>
                     Hola, tengo una pregunta sobre mi pedido.
                   </p>
@@ -94,7 +94,7 @@ export default function ChatWidget(): JSX.Element {
                   className="flex-1 p-3 border border-[var(--border)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                 />
                 <button
-                  className="text-[var(--color-primary)] text-[var(--white)] p-3 rounded-lg hover:bg-blue-700 transition-colors"
+                  className="bg-[var(--color-primary)] text-[var(--white)] p-3 rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   <FaPaperPlane size={20} />
                 </button>

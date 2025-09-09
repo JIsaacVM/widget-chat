@@ -1,4 +1,3 @@
-// app/layout.jsx o app/layout.tsx
 "use client";
 
 import React, { useEffect } from "react";
