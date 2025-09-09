@@ -4,6 +4,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./style.css";
 
 // Importa tus fuentes y estilos
 import { Geist, Geist_Mono } from "next/font/google";

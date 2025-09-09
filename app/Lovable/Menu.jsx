@@ -12,7 +12,7 @@ const Footer = () => {
     };
 
     return (
-        <div className="z-20 fixed top-0 left-0 w-full p-2 bg-[var(--bg-cards   )] backdrop-blur-sm text-black shadow-lg">
+        <div className="z-20 fixed top-0 left-0 w-full p-2 bg-[var(--bg-cards)] backdrop-blur-sm text-black shadow-lg">
             <div className="flex justify-between items-center h-16 px-4">
                 {/* Logo */}
                 <div className="flex-shrink-0">
@@ -31,8 +31,8 @@ const Footer = () => {
                     <a className="hover:text-[var(--color-secondary)] transition-colors" href="#">Servicios</a>
                     <a className="hover:text-[var(--color-secondary)] transition-colors" href="#">Regulación</a>
                     <a className="hover:text-[var(--color-secondary)] transition-colors" href="#">Transparencia</a>
-                    <p className="text-[var(--color-text-light)]">(+55) 911 911 911</p>
-                    <a className="text-[var(--color-primary)] text-[var(--white)] px-4 py-2 rounded-full hover:text-[var(--color-primary)] transition-colors" href="#">Contacto</a>
+                    <p className="text-[var(--color-secondary)]">(+55) 911 911 911</p>
+                    <a className="bg-[var(--color-primary)] text-[var(--white)] px-4 py-2 rounded-full hover:text-[var(--color-secondary)] transition-colors" href="#">Contacto</a>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ const Footer = () => {
                     <a className="hover:text-[var(--color-secondary)] transition-colors w-full text-center" href="#">Regulación</a>
                     <a className="hover:text-[var(--color-secondary)] transition-colors w-full text-center" href="#">Transparencia</a>
                     <p className="text-[var(--color-text-light)]">(+55) 911 911 911</p>
-                    <a className="text-[var(--color-primary)] text-[var(--white)] px-4 py-2 rounded-full w-full text-center hover:text-[var(--color-primary)] transition-colors" href="#">Contacto</a>
+                    <a className="bg-[var(--color-primary)] text-[var(--white)] px-4 py-2 rounded-full w-full text-center hover:text-[var(--color-primary)] transition-colors" href="#">Contacto</a>
                 </div>
             )}
         </div>

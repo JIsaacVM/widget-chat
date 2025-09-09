@@ -17,10 +17,10 @@ export default function ChatWidget(): JSX.Element {
       {/* Botón de la burbuja */}
       <motion.button
         onClick={toggleChat}
-        className="text-[var(--color-primary)] text-[var(--white)] rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 transition-transform duration-300"
+        className="bg-[var(--color-primary)] text-[var(--white)] rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-[var(--color-primary-dark)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 transition-transform duration-300"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-      >
+      > 
         <AnimatePresence mode="wait" initial={false}>
           {isOpen ? (
             <motion.div
@@ -57,7 +57,7 @@ export default function ChatWidget(): JSX.Element {
             transition={{ type: "spring", duration: 0.5, damping: 20, stiffness: 300 }}
           >
             {/* Header del chat */}
-            <div className="text-[var(--color-primary)] text-[var(--white)] p-4 flex justify-between items-center">
+            <div className="bg-[var(--color-primary)] text-[var(--white)] p-4 flex justify-between items-center">
               <h2 className="text-lg font-bold">Asistente Virtual</h2>
               <motion.button
                 onClick={toggleChat}

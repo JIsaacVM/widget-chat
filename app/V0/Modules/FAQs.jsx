@@ -9,11 +9,11 @@ const faqs = [
 
 export default function FAQs() {
     return (
-        <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+        <div className="bg-[var(--bg-cards)] py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto text-center">
                 {/* Encabezado con animación de fade-up */}
                 <div data-aos="fade-up">
-                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    <h2 className="text-3xl font-extrabold text-[var(--color-text-dark)] sm:text-4xl">
                         Preguntas Frecuentes
                     </h2>
                     <p className="mt-4 text-lg text-[var(--color-text-light)]">
@@ -31,7 +31,7 @@ export default function FAQs() {
                         data-aos-delay={index * 100} // Retraso escalonado para un efecto dinámico
                         className="bg-[var(--white)] p-6 rounded-xl shadow-md border border-[var(--border)]"
                     >
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2">{faq.question}</h3>
+                        <h3 className="text-lg font-semibold text-[var(--color-text-dark)] mb-2">{faq.question}</h3>
                         <p className="text-sm text-[var(--color-text-light)]">{faq.answer}</p>
                     </div>
                 ))}

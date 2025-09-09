@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from 'lucide-react';
+import "./style.css"
 
 const Footer = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ const Footer = () => {
     };
 
     return (
-        <header className="z-10 fixed top-0 left-0 w-full p-2 bg-[#ffffffd9] backdrop-blur-sm text-black shadow-lg">
+        <header className="z-10 fixed top-0 left-0 w-full p-2 bg-[var(--bg-light)] backdrop-blur-sm text-[var(--color-text-dark)] shadow-lg">
             <div className="flex justify-between items-center h-16 px-4">
                 {/* Logo */}
                 <div className="flex-shrink-0">
@@ -32,8 +33,8 @@ const Footer = () => {
                     <a className="hover:text-[var(--color-secondary)] transition-colors" href="#">Testimonio</a>
                     <a className="hover:text-[var(--color-secondary)] transition-colors" href="#">Contacto</a>
                     <div className="flex gap-4">
-                        <a className="px-4 bg-green-100 text-green-700 rounded-md flex items-center hover:bg-green-200 transition-colors" href="#">Iniciar Sesión</a>
-                        <a className="px-4 bg-green-300 text-green-800 rounded-md flex items-center hover:bg-green-400 transition-colors" href="#">Prueba Gratis</a>
+                        <a className="px-4 bg-[var(--color-primary)] text-[var(--white)] rounded-md flex items-center hover:bg-[var(--color-primary-dark)] transition-colors" href="#">Iniciar Sesión</a>
+                        <a className="px-4 bg-[var(--color-secondary)] text-[var(--white)] rounded-md flex items-center hover:bg-[var(--color-primary-dark)]  transition-colors" href="#">Prueba Gratis</a>
                     </div>
                 </div>
             </div>
@@ -46,8 +47,8 @@ const Footer = () => {
                     <a className="hover:text-[var(--color-secondary)] transition-colors w-full text-center" href="#">Precio</a>
                     <a className="hover:text-[var(--color-secondary)] transition-colors w-full text-center" href="#">Testimonio</a>
                     <a className="hover:text-[var(--color-secondary)] transition-colors w-full text-center" href="#">Contacto</a>
-                    <a className="px-4 bg-green-100 text-green-700 rounded-md w-full text-center hover:bg-green-200 transition-colors" href="#">Iniciar Sesión</a>
-                    <a className="px-4 bg-green-300 text-green-800 rounded-md w-full text-center hover:bg-green-400 transition-colors" href="#">Prueba Gratis</a>
+                    <a className="px-4 bg-[var(--color-primary)] text-[var(--white)] rounded-md w-full text-center hover:bg-[var(--color-primary-dark)] transition-colors py-2" href="#">Iniciar Sesión</a>
+                    <a className="px-4 bg-[var(--color-secondary)] text-[var(--white)] rounded-md w-full text-center hover:bg-[var(--color-primary-dark)] transition-colors" href="#">Prueba Gratis</a>
                 </div>
             )}
         </header>

@@ -8,7 +8,7 @@ const footerLinks = [
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <footer className="bg-[var(--bg-footer)] text-[var(--color-text-light)] py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                 {/* Left Section */}
                 <div>
@@ -17,10 +17,10 @@ export default function Footer() {
                         La plataforma financiera más avanzada de México. Regulada por CONDUSEF.
                     </p>
                     <div className="mt-4 flex space-x-2">
-                        <span className="text-[var(--color-primary)] text-[var(--white)] text-xs font-semibold px-3 py-1 rounded-full">
+                        <span className="bg-[var(--color-primary)] text-[var(--white)] text-xs font-semibold px-3 py-1 rounded-full">
                             50K+ Clientes
                         </span>
-                        <span className="bg-red-500 text-[var(--white)] text-xs font-semibold px-3 py-1 rounded-full">
+                        <span className="bg-[var(--color-tertiary)] text-[var(--white)] text-xs font-semibold px-3 py-1 rounded-full">
                             $2B+ Gestionados
                         </span>
                     </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                 ))}
             </div>
 
-            <div className="mt-12 text-center text-gray-500 text-sm border-t border-gray-700 pt-8">
+            <div className="mt-12 text-center text-[var(--color-text-light)] text-sm border-t border-[var(--color-text-light)] pt-8">
                 © 2024 FinanceSecure. Todos los derechos reservados. Registro CONDUSEF: 12345-2024
             </div>
         </footer>

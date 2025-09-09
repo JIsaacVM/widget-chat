@@ -12,7 +12,7 @@ const Header = () => {
     };
 
     return (
-        <header className="z-10 fixed top-0 left-0 w-full bg-[#ffffffd9] backdrop-blur-sm text-black shadow-lg">
+        <header className="z-10 fixed top-0 left-0 w-full bg-[var(--bg-cards)] backdrop-blur-sm text-black shadow-lg">
             <nav className="flex items-center justify-between py-6 px-4">
                 {/* Logo */}
                 <div className="text-2xl font-bold ">Finanzas Seguras</div>

@@ -37,7 +37,7 @@ export default function Pricing() {
             <div className="max-w-7xl mx-auto text-center">
                 {/* Contenedor del encabezado con animación fade-up */}
                 <div data-aos="fade-up">
-                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    <h2 className="text-3xl font-extrabold text-[var(--color-text-dark)] sm:text-4xl">
                         Planes Diseñados para Ti
                     </h2>
                     <p className="mt-4 text-lg text-[var(--color-text-light)]">
@@ -54,16 +54,16 @@ export default function Pricing() {
                         data-aos="fade-up"
                         data-aos-delay={index * 150} // Retraso de 150ms para cada tarjeta
                         className={`bg-[var(--white)] p-8 rounded-xl shadow-lg flex flex-col items-center relative 
-                        ${plan.isPopular ? 'border-2 border-blue-500' : 'border border-[var(--border)]'}`}
+                        ${plan.isPopular ? 'border-2 border-[var(--color-primary)]' : 'border border-[var(--border)]'}`}
                     >
                         {plan.isPopular && (
-                            <span className="absolute -top-4 text-[var(--color-primary)] text-[var(--white)] text-xs font-semibold px-4 py-1 rounded-full">
+                            <span className="absolute -top-4 bg-[var(--color-primary)] text-[var(--white)] text-xs font-semibold px-4 py-1 rounded-full">
                                 Más Popular
                             </span>
                         )}
-                        <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
-                        <p className="text-sm text-gray-500 mb-6">{plan.description}</p>
-                        <p className="text-4xl font-extrabold text-gray-900 mb-8">{plan.price}</p>
+                        <h3 className="text-2xl font-bold text-[var(--color-text-dark)] mb-2">{plan.name}</h3>
+                        <p className="text-sm text-[var(--color-text-light)] mb-6">{plan.description}</p>
+                        <p className="text-4xl font-extrabold text-[var(--color-text-dark)] mb-8">{plan.price}</p>
 
                         <ul className="space-y-4 text-left w-full">
                             {plan.features.map((feature, i) => (
@@ -74,7 +74,7 @@ export default function Pricing() {
                             ))}
                         </ul>
 
-                        <button className={`mt-10 px-6 py-3 rounded-md font-semibold text-lg w-full transition-colors duration-300 ${plan.isPopular ? 'bg-teal-600 text-[var(--white)] hover:bg-teal-700' : 'border border-teal-500 text-teal-600 hover:bg-teal-50'}`}>
+                        <button className={`mt-10 px-6 py-3 rounded-md font-semibold text-lg w-full transition-colors duration-300 ${plan.isPopular ? 'bg-[var(--color-primary)] text-[var(--white)] hover:bg-[var(--color-primary-dark)]' : 'border border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary-light)]'}`}>
                             {plan.buttonText}
                         </button>
                     </div>

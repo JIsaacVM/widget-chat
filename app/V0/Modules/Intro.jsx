@@ -5,11 +5,11 @@ import { PlayCircleIcon, ArrowRightIcon, ChartBarIcon, ScaleIcon, ShieldCheckIco
 export default function FinanceProHero() {
 
     return (
-        <div className="bg-gray-50 py-16 sm:py-24 lg:py-32 flex flex-col items-center justify-center text-center px-4">
+        <div className="bg-[var(--bg-light)] py-16 sm:py-24 lg:py-32 flex flex-col items-center justify-center text-center px-4">
             {/* Etiqueta CONDUSEF */}
             <div
                 data-aos="fade-down"
-                className="text-sm text-red-600 bg-red-100 px-3 py-1 rounded-full mb-8 inline-block">
+                className="text-sm text-[var(--color-tertiary)] bg-[var(--color-tertiary-light)] px-3 py-1 rounded-full mb-8 inline-block">
                 Regulado por CONDUSEF • Prueba Gratis 30 días
             </div>
 
@@ -34,11 +34,11 @@ export default function FinanceProHero() {
                 data-aos="zoom-in"
                 data-aos-delay="300"
                 className="flex flex-col sm:flex-row gap-4 mb-16">
-                <button className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[var(--white)] bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10 shadow-lg transition-colors duration-300">
+                <button className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[var(--white)] bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] md:py-4 md:text-lg md:px-10 shadow-lg transition-colors duration-300">
                     <PlayCircleIcon className="size-6 mr-2" />
                     Ver Demo en Vivo
                 </button>
-                <button className="flex items-center justify-center px-8 py-3 border border-teal-600 text-base font-medium rounded-md text-teal-600 bg-[var(--white)] hover:bg-gray-50 md:py-4 md:text-lg md:px-10 shadow-lg transition-colors duration-300">
+                <button className="flex items-center justify-center px-8 py-3 border border-[var(--color-primary)] text-base font-medium rounded-md text-[var(--color-primary)] bg-[var(--white)] hover:bg-[var(--color-primary-light)] md:py-4 md:text-lg md:px-10 shadow-lg transition-colors duration-300">
                     Comenzar Prueba Gratis
                     <ArrowRightIcon className="size-6 ml-2" />
                 </button>
@@ -47,42 +47,42 @@ export default function FinanceProHero() {
             <div
                 data-aos="flip-up"
                 data-aos-delay="400"
-                className="bg-[var(--white)] p-6 sm:p-10 rounded-2xl shadow-xl border border-gray-100">
+                className="bg-[var(--white)] p-6 sm:p-10 rounded-2xl shadow-xl border border-[var(--border)]">
 
                 <div className="flex items-center justify-between mb-6">
-                    <span className="text-gray-400 font-mono text-sm">app.financesecure.mx</span>
+                    <span className="text-[var(--color-text-light)] font-mono text-sm">app.financesecure.mx</span>
                     <div className="flex space-x-1.5">
-                        <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-                        <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
-                        <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+                        <span className="w-3 h-3 bg-[var(--color-tertiary)] rounded-full"></span>
+                        <span className="w-3 h-3 bg-[var(--color-warning)] rounded-full"></span>
+                        <span className="w-3 h-3 bg-[var(--color-primary)] rounded-full"></span>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     {/* Tarjeta 1: Rendimiento Anual */}
-                    <div data-aos="fade-up" className="p-6 rounded-lg bg-blue-50 text-center">
+                    <div data-aos="fade-up" className="p-6 rounded-lg bg-[var(--bg-cards)] text-center">
                         <div className="flex justify-center items-center mb-2">
                             <ChartBarIcon className="size-8 text-[var(--color-secondary)]" />
                         </div>
                         <p className="text-3xl font-bold text-[var(--color-primary)] mb-1">+12.5%</p>
-                        <p className="text-sm text-gray-500">Rendimiento Anual</p>
+                        <p className="text-sm text-[var(--color-text-light)]">Rendimiento Anual</p>
                     </div>
 
                     {/* Tarjeta 2: Patrimonio Total */}
-                    <div data-aos="fade-up" className="p-6 rounded-lg bg-red-50 text-center">
+                    <div data-aos="fade-up" className="p-6 rounded-lg bg-[var(--bg-cards)] text-center">
                         <div className="flex justify-center items-center mb-2">
-                            <ScaleIcon className="size-8 text-red-500" />
+                            <ScaleIcon className="size-8 text-[var(--color-tertiary)]" />
                         </div>
-                        <p className="text-3xl font-bold text-red-600 mb-1">$2.4M</p>
-                        <p className="text-sm text-gray-500">Patrimonio Total</p>
+                        <p className="text-3xl font-bold text-[var(--color-tertiary)] mb-1">$2.4M</p>
+                        <p className="text-sm text-[var(--color-text-light)]">Patrimonio Total</p>
                     </div>
 
                     {/* Tarjeta 3: Protegido */}
-                    <div data-aos="fade-up" className="p-6 rounded-lg bg-green-50 text-center">
+                    <div data-aos="fade-up" className="p-6 rounded-lg bg-[var(--bg-cards)] text-center">
                         <div className="flex justify-center items-center mb-2">
-                            <ShieldCheckIcon className="size-8 text-green-500" />
+                            <ShieldCheckIcon className="size-8 text-[var(--color-primary)]" />
                         </div>
-                        <p className="text-3xl font-bold text-green-600 mb-1">100%</p>
-                        <p className="text-sm text-gray-500">Protegido</p>
+                        <p className="text-3xl font-bold text-[var(--color-primary)] mb-1">100%</p>
+                        <p className="text-sm text-[var(--color-text-light)]">Protegido</p>
                     </div>
                 </div>
             </div>
@@ -93,20 +93,20 @@ export default function FinanceProHero() {
                 className="text-[var(--bg-circle)] w-full mt-16 ">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                     <div data-aos="zoom-in" className="p-6">
-                        <p className="text-4xl sm:text-5xl font-extrabold text-teal-600 mb-2">50K+</p>
-                        <p className="text-sm sm:text-base text-gray-500">Clientes Activos</p>
+                        <p className="text-4xl sm:text-5xl font-extrabold text-[var(--color-primary)] mb-2">50K+</p>
+                        <p className="text-sm sm:text-base text-[var(--color-text-light)]">Clientes Activos</p>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="100" className="p-6">
-                        <p className="text-4xl sm:text-5xl font-extrabold text-teal-600 mb-2">$2.4B</p>
-                        <p className="text-sm sm:text-base text-gray-500">Activos Gestionados</p>
+                        <p className="text-4xl sm:text-5xl font-extrabold text-[var(--color-tertiary)] mb-2">$2.4B</p>
+                        <p className="text-sm sm:text-base text-[var(--color-text-light)]">Activos Gestionados</p>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="200" className="p-6">
-                        <p className="text-4xl sm:text-5xl font-extrabold text-teal-600 mb-2">15.8%</p>
-                        <p className="text-sm sm:text-base text-gray-500">Rendimiento Promedio</p>
+                        <p className="text-4xl sm:text-5xl font-extrabold text-[var(--color-primary)] mb-2">15.8%</p>
+                        <p className="text-sm sm:text-base text-[var(--color-text-light)]">Rendimiento Promedio</p>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="300" className="p-6">
-                        <p className="text-4xl sm:text-5xl font-extrabold text-teal-600 mb-2">99.9%</p>
-                        <p className="text-sm sm:text-base text-gray-500">Uptime Garantizado</p>
+                        <p className="text-4xl sm:text-5xl font-extrabold text-[var(--color-tertiary)] mb-2">99.9%</p>
+                        <p className="text-sm sm:text-base text-[var(--color-text-light)]">Uptime Garantizado</p>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ export default function FinanceProHero() {
                     data-aos="fade-up"
                     data-aos-delay="100"
                     className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
+                    <h1 className="text-4xl md:text-5xl font-bold text-[var(--color-text-dark)] mb-2">
                         FinancePro: Tu Asistente Financiero Inteligente
                     </h1>
                     <p className="text-lg text-[var(--color-text-light)] max-w-2xl mx-auto">
@@ -132,7 +132,7 @@ export default function FinanceProHero() {
                     <div
                         data-aos="fade-up"
                         className="flex-1 bg-[var(--white)] p-8 rounded-xl shadow-lg mb-8 lg:mb-0">
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+                        <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-text-dark)] mb-6">
                             Gestión Inteligente de Portafolios
                         </h2>
 
@@ -140,7 +140,7 @@ export default function FinanceProHero() {
                             <div className="flex items-start" data-aos="fade-up" data-aos-delay="100">
                                 <CheckCircleIcon className="w-6 h-6 text-[var(--color-secondary)] mr-4 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-800">IA Predictiva Avanzada</h3>
+                                    <h3 className="text-lg font-semibold text-[var(--color-text-dark)]">IA Predictiva Avanzada</h3>
                                     <p className="text-[var(--color-text-light)] text-sm">
                                         Algoritmos que analizan 10,000+ variables del mercado en tiempo real
                                     </p>
@@ -149,7 +149,7 @@ export default function FinanceProHero() {
                             <div className="flex items-start" data-aos="fade-up" data-aos-delay="200">
                                 <CheckCircleIcon className="w-6 h-6 text-[var(--color-secondary)] mr-4 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-800">Rebalanceo Automático</h3>
+                                    <h3 className="text-lg font-semibold text-[var(--color-text-dark)]">Rebalanceo Automático</h3>
                                     <p className="text-[var(--color-text-light)] text-sm">
                                         Tu portafolio se optimiza automáticamente según condiciones del mercado
                                     </p>
@@ -158,7 +158,7 @@ export default function FinanceProHero() {
                             <div className="flex items-start" data-aos="fade-up" data-aos-delay="300">
                                 <CheckCircleIcon className="w-6 h-6 text-[var(--color-secondary)] mr-4 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-800">Diversificación Global</h3>
+                                    <h3 className="text-lg font-semibold text-[var(--color-text-dark)]">Diversificación Global</h3>
                                     <p className="text-[var(--color-text-light)] text-sm">
                                         Acceso a mercados internacionales y activos alternativos
                                     </p>

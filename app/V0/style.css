@@ -1,29 +1,35 @@
 :root {
-    --color-primary: #7BF1A8;
+    --color-primary: #009689;
+
+    --color-primary-light: #93c9c3;
     /* Azul primario */
-    --color-primary-dark: #1A9243;
+    --color-primary-dark: #007f6b;
     /* Azul oscuro */
-    --color-secondary: #1849C3;
+    --color-secondary: #3c826e;
     /* Azul secundario */
+    --color-tertiary: #df3f3f;
+    --color-tertiary-light: #f8cfcf;
+    /* Azul terciario */
     --color-text-dark: #101828;
     /* Gris oscuro para texto */
     /* Gris claro para texto */
-    --color-text-light: #4d4c4c;
+    --color-text-light: #a9a8a8;
 
-    --color-warning: #e9cd2a;
+    --color-warning: #e9cd2a;   
 
-    --bg-cards: #F9FAFB;
+    --bg-cards: #eeeef0b5;
 
     --bg-cirlce: #a6c3f1;
     --bg-light: #ffffffd9;
     --btn-hover: #0b67fb;
+    --bg-footer: #48494a;
 
 
     --white: #ffffff;
     --white-half: #ffffff80;
     --black: #000000;
 
-    --boder: #ffffff;
+    --boder: #ead8d8;
 }
 
 /* Estilos de cuerpo para utilizar las variables */

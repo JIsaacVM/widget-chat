@@ -19,7 +19,7 @@ export default function Features() {
             <div className="max-w-7xl mx-auto text-center">
                 {/* Encabezado con animación fade-up */}
                 <div data-aos="fade-up">
-                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    <h2 className="text-3xl font-extrabold text-[var(--color-text-dark)] sm:text-4xl">
                         Características Principales
                     </h2>
                     <p className="mt-4 text-lg text-[var(--color-text-light)]">
@@ -35,10 +35,10 @@ export default function Features() {
                         key={index}
                         data-aos="fade-up"
                         data-aos-delay={index * 100} // Retraso de 100ms entre cada tarjeta
-                        className="bg-gray-50 p-8 rounded-xl shadow-lg border border-[var(--border)]"
+                        className="bg-[var(--bg-cards)] p-8 rounded-xl shadow-lg  "
                     >
                         <feature.icon className="w-12 h-12 text-[var(--color-secondary)] mb-4" />
-                        <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                        <h3 className="text-xl font-semibold text-[var(--color-text-dark)] mb-2">{feature.title}</h3>
                         <p className="text-sm text-[var(--color-text-light)] leading-relaxed">{feature.description}</p>
                     </div>
                 ))}
