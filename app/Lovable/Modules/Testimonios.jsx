@@ -2,6 +2,27 @@ import React from 'react';
 import { ShieldCheckIcon, PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
 
+const testimonialsData = [
+    {
+        rating: 5,
+        text: 'Excelente servicio y total transparencia. El proceso fue muy claro y cumplieron todo lo prometido.',
+        name: 'María González',
+        title: 'Empresaria',
+    },
+    {
+        rating: 5,
+        text: 'Me ayudaron a resolver mi situación crediticia de manera profesional y siguiendo todas las regulaciones.',
+        name: 'Carlos Hernández',
+        title: 'Comerciante',
+    },
+    {
+        rating: 5,
+        text: 'La asesoría fue excepcional y siempre me mantuvieron informada sobre las regulaciones de CONDUSEF.',
+        name: 'Ana Martínez',
+        title: 'Profesionista',
+    },
+];
+
 const StarRating = ({ rating }) => {
     const stars = Array.from({ length: 5 }, (_, index) => (
         <StarIcon
@@ -14,8 +35,8 @@ const StarRating = ({ rating }) => {
 
 const Testimonial = ({ rating, text, name, title, index }) => (
     <div
-        data-aos="fade-up" // Animación para cada testimonio
-        data-aos-delay={index * 100} // Retraso escalonado
+        data-aos="fade-up"
+        data-aos-delay={index * 100}
     >
         <StarRating rating={rating} />
         <p className="mt-2 text-[var(--color-text-light)] italic">"{text}"</p>
@@ -40,9 +61,9 @@ export default function ContactTestimonials() {
 
             {/* Contenedor Principal de la Sección */}
             <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12">
-                {/* Columna Izquierda: Formulario de Contacto */}
+                {/* Columna Izquierda: Formulario de Contacto (no se modifica) */}
                 <div
-                    data-aos="fade-up" // Animación para toda la sección del formulario
+                    data-aos="fade-up"
                     className="p-8 bg-[var(--bg-light)] rounded-xl shadow-lg"
                 >
                     <div className="flex items-center gap-3 mb-6">
@@ -97,14 +118,13 @@ export default function ContactTestimonials() {
 
                 {/* Columna Derecha: Información de Contacto y Testimonios */}
                 <div
-                    data-aos="fade-up" // Animación para toda la sección de info y testimonios
+                    data-aos="fade-up"
                     className="flex flex-col justify-between"
                 >
                     <div>
-                        {/* Información de Contacto */}
+                        {/* Información de Contacto (no se modifica) */}
                         <h2 className="text-xl font-bold text-[var(--color-text-dark)] mb-4">Información de Contacto</h2>
                         <div className="space-y-4 text-[var(--color-text-light)]">
-                            {/* ... Elementos de contacto ... */}
                             <div className="flex items-start gap-3">
                                 <PhoneIcon className="w-5 h-5 text-[var(--color-secondary)] flex-shrink-0" />
                                 <div>
@@ -137,30 +157,19 @@ export default function ContactTestimonials() {
                     </div>
 
                     <div className="mt-12">
-                        {/* Testimonios */}
+                        {/* Testimonios (ahora mapeados) */}
                         <h2 className="text-xl font-bold text-[var(--color-text-dark)] mb-4">Lo que dicen nuestros clientes</h2>
                         <div className="space-y-8">
-                            <Testimonial
-                                rating={5}
-                                text="Excelente servicio y total transparencia. El proceso fue muy claro y cumplieron todo lo prometido."
-                                name="María González"
-                                title="Empresaria"
-                                index={0} // Índice para el retraso escalonado
-                            />
-                            <Testimonial
-                                rating={5}
-                                text="Me ayudaron a resolver mi situación crediticia de manera profesional y siguiendo todas las regulaciones."
-                                name="Carlos Hernández"
-                                title="Comerciante"
-                                index={1} // Índice para el retraso escalonado
-                            />
-                            <Testimonial
-                                rating={5}
-                                text="La asesoría fue excepcional y siempre me mantuvieron informada sobre las regulaciones de CONDUSEF."
-                                name="Ana Martínez"
-                                title="Profesionista"
-                                index={2} // Índice para el retraso escalonado
-                            />
+                            {testimonialsData.map((testimonial, index) => (
+                                <Testimonial
+                                    key={index}
+                                    rating={testimonial.rating}
+                                    text={testimonial.text}
+                                    name={testimonial.name}
+                                    title={testimonial.title}
+                                    index={index}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>
